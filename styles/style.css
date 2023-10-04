@@ -47,7 +47,7 @@ main {
   z-index: 1000;
   /* outline: 1px solid red; */
   background-color: var(--footerBgClr);
-  position: sticky;
+  position: fixed;
   top: 0px;
   left: 0px;
   display: flex;
