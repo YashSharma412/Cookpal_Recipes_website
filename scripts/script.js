@@ -10,6 +10,8 @@ const searchInput = document.getElementById("searchInput");
 const toggleAll = document.getElementById("toggleAll");
 const toggleVeg = document.getElementById("toggleVeg");
 const toggleNonVeg = document.getElementById("toggleNonVeg");
+const toggleLiked = document.getElementById("toggleLikedRecipes");
+
 
 //Rating Butons
 const ratingAbove = document.getElementById("greterEqualToFour");
@@ -130,12 +132,16 @@ function filterRecipes(searchQuery) {
 toggleAll.addEventListener("click", () => toggleByType("all"));
 toggleVeg.addEventListener("click", () => toggleByType("veg"));
 toggleNonVeg.addEventListener("click", () => toggleByType("non-veg"));
+toggleLiked.addEventListener("click", () => toggleByType("isLiked"));
+
 
 function toggleByType(type) {
   let toggledRecipeList;
   if (type === "all") {
     toggledRecipeList = recipes;
-  } else {
+  } else if( type === "isLiked"){
+    toggledRecipeList = recipes.filter((recipe) => recipe.isLiked === true);
+  } else{
     toggledRecipeList = recipes.filter((recipe) => recipe.type === type);
   }
 
@@ -148,8 +154,7 @@ ratingAbove.addEventListener("change", checkMarkRadio);
 ratingBelow.addEventListener("change", checkMarkRadio);
 
 function checkMarkRadio(event) {
-  // console.log(event.target.checked);
-  let recipesSortedByRating;
+   let recipesSortedByRating;
   if (event.target === ratingAbove && ratingAbove.checked) {
     ratingBelow.checked = false;
     recipesSortedByRating = recipes.filter((recipe) => recipe.rating >= 4.0);
