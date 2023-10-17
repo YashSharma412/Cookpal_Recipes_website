@@ -1,20 +1,19 @@
-
 // data fetched
 let myJSON =
-  '[ { "name": "Veggie Delight", "imageSrc": "https://source.unsplash.com/random?veggies", "time": "30 min", "type": "veg", "isLiked": false, "rating": 4.2 }, { "name": "Chicken Grill", "imageSrc": "https://source.unsplash.com/random?chicken", "time": "45 min", "type": "non-veg", "isLiked": false, "rating": 4.5 }, { "name": "Cheese Pizza", "imageSrc": "https://source.unsplash.com/random?pizza", "time": "40 min", "type": "veg", "isLiked": false, "rating": 4.1 }, { "name": "Steak", "imageSrc": "https://source.unsplash.com/random?steak", "time": "60 min", "type": "non-veg", "isLiked": false, "rating": 4.7 }, { "name": "Grilled Salmon", "imageSrc": "https://source.unsplash.com/random?salmon", "time": "50 min", "type": "non-veg", "isLiked": false, "rating": 4.6 }, { "name": "Tomato Pasta", "imageSrc": "https://source.unsplash.com/random?pasta", "time": "35 min", "type": "veg", "isLiked": false, "rating": 4.0 }, { "name": "Vegan Salad", "imageSrc": "https://source.unsplash.com/random?salad", "time": "20 min", "type": "veg", "isLiked": false, "rating": 3.9 }, { "name": "Fried Chicken", "imageSrc": "https://source.unsplash.com/random?friedChicken", "time": "55 min", "type": "non-veg", "isLiked": false, "rating": 4.3 }, { "name": "Mushroom Risotto", "imageSrc": "https://source.unsplash.com/random?risotto", "time": "45 min", "type": "veg", "isLiked": false, "rating": 4.5 }, { "name": "Burger", "imageSrc": "https://source.unsplash.com/random?burger", "time": "30 min", "type": "non-veg", "isLiked": false, "rating": 4.2 }, { "name": "Paneer Tikka", "imageSrc": "https://source.unsplash.com/random?paneerTikka", "time": "40 min", "type": "veg", "isLiked": false, "rating": 4.4 }, { "name": "BBQ Ribs", "imageSrc": "https://source.unsplash.com/random?ribs", "time": "70 min", "type": "non-veg", "isLiked": false, "rating": 4.6 }, { "name": "Caesar Salad", "imageSrc": "https://source.unsplash.com/random?caesarSalad", "time": "25 min", "type": "veg", "isLiked": false, "rating": 3.8 }, { "name": "Fish Tacos", "imageSrc": "https://source.unsplash.com/random?fishTacos", "time": "35 min", "type": "non-veg", "isLiked": false, "rating": 4.3 }, { "name": "Chocolate Cake", "imageSrc": "https://source.unsplash.com/random?chocolateCake", "time": "90 min", "type": "veg", "isLiked": false, "rating": 4.9 } ]';
+  '[ { "name": "Veggie Delight", "imageSrc": "https://images.unsplash.com/photo-1602093697647-f60b58cddfb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80", "time": "30 min", "type": "veg", "isLiked": false, "rating": 4.2 }, { "name": "Chicken Grill", "imageSrc": "https://cdn.pixabay.com/photo/2017/06/28/17/40/chicken-2451482_1280.jpg", "time": "45 min", "type": "non-veg", "isLiked": false, "rating": 4.5 }, { "name": "Cheese Pizza", "imageSrc": "https://source.unsplash.com/random?pizza", "time": "40 min", "type": "veg", "isLiked": false, "rating": 4.1 }, { "name": "Steak", "imageSrc": "https://source.unsplash.com/random?steak", "time": "60 min", "type": "non-veg", "isLiked": false, "rating": 4.7 }, { "name": "Grilled Salmon", "imageSrc": "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80", "time": "50 min", "type": "non-veg", "isLiked": false, "rating": 4.6 }, { "name": "Tomato Pasta", "imageSrc": "https://source.unsplash.com/random?pasta", "time": "35 min", "type": "veg", "isLiked": false, "rating": 4.0 }, { "name": "Vegan Salad", "imageSrc": "https://source.unsplash.com/random?salad", "time": "20 min", "type": "veg", "isLiked": false, "rating": 3.9 }, { "name": "Fried Chicken", "imageSrc": "https://source.unsplash.com/random?friedChicken", "time": "55 min", "type": "non-veg", "isLiked": false, "rating": 4.3 }, { "name": "Mushroom Risotto", "imageSrc": "https://source.unsplash.com/random?risotto", "time": "45 min", "type": "veg", "isLiked": false, "rating": 4.5 }, { "name": "Burger", "imageSrc": "https://source.unsplash.com/random?burger", "time": "30 min", "type": "non-veg", "isLiked": false, "rating": 4.2 }, { "name": "Paneer Tikka", "imageSrc": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1017&q=80", "time": "40 min", "type": "veg", "isLiked": false, "rating": 4.4 }, { "name": "BBQ Ribs", "imageSrc": "https://source.unsplash.com/random?ribs", "time": "70 min", "type": "non-veg", "isLiked": false, "rating": 4.6 }, { "name": "Caesar Salad", "imageSrc": "https://source.unsplash.com/random?caesarSalad", "time": "25 min", "type": "veg", "isLiked": false, "rating": 3.8 }, { "name": "Fish Tacos", "imageSrc": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80", "time": "35 min", "type": "non-veg", "isLiked": false, "rating": 4.3 }, { "name": "Chocolate Cake", "imageSrc": "https://source.unsplash.com/random?chocolateCake", "time": "90 min", "type": "veg", "isLiked": false, "rating": 4.9 } ]';
 
 const recipes = JSON.parse(myJSON);
 const recipeContainer = document.getElementById("recipieCardContainer");
 const searchInput = document.getElementById("searchInput");
 
 //Toggle buttons
-const toggleAll = document.getElementById('toggleAll');
-const toggleVeg = document.getElementById('toggleVeg');
-const toggleNonVeg = document.getElementById('toggleNonVeg');
+const toggleAll = document.getElementById("toggleAll");
+const toggleVeg = document.getElementById("toggleVeg");
+const toggleNonVeg = document.getElementById("toggleNonVeg");
 
 //Rating Butons
-const ratingAbove = document.getElementById('greterEqualToFour');
-const ratingBelow = document.getElementById('lessThenFour');
+const ratingAbove = document.getElementById("greterEqualToFour");
+const ratingBelow = document.getElementById("lessThenFour");
 
 function generateRecipeCard(recipes) {
   recipes.forEach((recipe) => {
@@ -128,60 +127,53 @@ function filterRecipes(searchQuery) {
 // Toggle buttons functionality
 
 // event listners for the buttons
-toggleAll.addEventListener('click', () => toggleByType('all'));
-toggleVeg.addEventListener('click', () => toggleByType('veg'));
-toggleNonVeg.addEventListener('click', () => toggleByType('non-veg'));
+toggleAll.addEventListener("click", () => toggleByType("all"));
+toggleVeg.addEventListener("click", () => toggleByType("veg"));
+toggleNonVeg.addEventListener("click", () => toggleByType("non-veg"));
 
-function toggleByType(type){
-    let toggledRecipeList;
-    if(type === 'all'){
-        toggledRecipeList = recipes;
-    } else {
+function toggleByType(type) {
+  let toggledRecipeList;
+  if (type === "all") {
+    toggledRecipeList = recipes;
+  } else {
+    toggledRecipeList = recipes.filter((recipe) => recipe.type === type);
+  }
 
-        toggledRecipeList = recipes.filter((recipe) => recipe.type === type);
-    }
-
-    displayRecipeCards(toggledRecipeList);
+  displayRecipeCards(toggledRecipeList);
 }
 
 // sort by rating buttons functionality
 
-ratingAbove.addEventListener('change', checkMarkRadio);
-ratingBelow.addEventListener('change', checkMarkRadio);
+ratingAbove.addEventListener("change", checkMarkRadio);
+ratingBelow.addEventListener("change", checkMarkRadio);
 
-function checkMarkRadio(event){
-    // console.log(event.target.checked);
-    let recipesSortedByRating;
-    if (event.target === ratingAbove && ratingAbove.checked) {
-        ratingBelow.checked = false;
-        recipesSortedByRating = recipes.filter((recipe)=>recipe.rating >= 4.0);
+function checkMarkRadio(event) {
+  // console.log(event.target.checked);
+  let recipesSortedByRating;
+  if (event.target === ratingAbove && ratingAbove.checked) {
+    ratingBelow.checked = false;
+    recipesSortedByRating = recipes.filter((recipe) => recipe.rating >= 4.0);
+  } else if (event.target === ratingBelow && ratingBelow.checked) {
+    ratingAbove.checked = false;
+    recipesSortedByRating = recipes.filter((recipe) => recipe.rating < 4.0);
+  } else if (!ratingAbove.checked && !ratingBelow.checked) {
+    // Both checkboxes are unchecked, so return early
+    recipesSortedByRating = recipes;
+  }
 
-      } 
-    else if (event.target === ratingBelow && ratingBelow.checked) {
-        ratingAbove.checked = false;
-        recipesSortedByRating = recipes.filter((recipe) => recipe.rating < 4.0);
-      } 
-    else if (!ratingAbove.checked && !ratingBelow.checked) {
-        // Both checkboxes are unchecked, so return early
-        recipesSortedByRating = recipes;
-      }
-
-    displayRecipeCards(recipesSortedByRating);
+  displayRecipeCards(recipesSortedByRating);
 }
 
-const Subscribe = document.getElementById('subscribe');
-const emailForSub = document.getElementById('emailForSub');
-let subscriberEmail = '';
-Subscribe.addEventListener('click', ()=>{
-  if(emailForSub.value){
-    subscriberEmail = emailForSub.value
-  emailForSub.value = '';
-console.log(subscriberEmail);
-  alert('Response Note');
-  
-} else {
+const Subscribe = document.getElementById("subscribe");
+const emailForSub = document.getElementById("emailForSub");
+let subscriberEmail = "";
+Subscribe.addEventListener("click", () => {
+  if (emailForSub.value) {
+    subscriberEmail = emailForSub.value;
+    emailForSub.value = "";
+    console.log(subscriberEmail);
+    alert("Response Note");
+  } else {
     alert("provide valid response");
   }
-  
-  
-})
+});

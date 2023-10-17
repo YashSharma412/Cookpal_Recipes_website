@@ -1,173 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/icons8-chef-hat-96.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./styles/navbar.css" />
-  <link rel="stylesheet" href="./styles/header.css" />
-  <link rel="stylesheet" href="./styles/searchAndfilter.css" />
-  <link rel="stylesheet" href="./styles/card.css">
-  <link rel="stylesheet" href="./styles/footer.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <title>CookPal Recipes</title>
-</head>
-<body>
-  <section id="mobileDrawer">
-    <div><h id="mobDrawerClose">x</h>
-    </div>
-    <div>
-      <div class="siteLogo">
-        <img src="./assets/CookpalIcon.svg" alt="site_logo" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons8-chef-hat-96.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/searchAndfilter.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>CookPal Recipes</title>
+  </head>
+  <body>
+    <section id="mobileDrawer">
+      <div><h id="mobDrawerClose">x</h></div>
+      <div>
+        <div class="siteLogo">
+          <img src="./assets/CookpalIcon.svg" alt="site_logo" />
+        </div>
+        <div class="userProfile">
+          <img src="./assets/userProfile.svg" alt="User Profile" />
+        </div>
       </div>
-      <div class="userProfile">
-        <img src="./assets/userProfile.svg" alt="User Profile" />
-      </div>
-    </div>
-    <ul class="mobnavOptions">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Explore</a></li>
-      <li><a href="#">Help</a></li>
-    </ul>
-    
-  </section>
-  <main>
-    <nav>
-      <div id="mobMenu" class="hide">
-        <img src="./assets/menu.svg" alt="site_logo" />
-      </div>
-      <div class="siteLogo">
-        <img src="./assets/CookpalIcon.svg" alt="site_logo" />
-      </div>
-      <ul class="navOptions" class="hideNav">
+      <ul class="mobnavOptions">
         <li><a href="#">Home</a></li>
         <li><a href="#">Explore</a></li>
         <li><a href="#">Help</a></li>
       </ul>
-      <div class="userProfile hideNav">
-        <img src="./assets/userProfile.svg" alt="User Profile" />
-      </div>
-    </nav>
-    <header>
-      <div id="headerImageDiv">
-        <img id="headerImg" src="./assets/heroSectionImage.jpeg" alt="header image background" />
-        <div id="headerTxt">
-          <h3>Trending now</h3>
-          <h1>Mikes famous salad with cheese</h1>
-          <h2>By John Mike</h2>
-        </div>
-      </div>
-      <div id="searchAndRadioContainer">
-        <h2>Search For Recipes</h2>
-        <div class="searchDiv">
-          <label for="searchInput"><img src="./assets/searchLabel.svg" alt="search" /></label>
-          <input type="text" name="search" id="searchInput" placeholder="Search for recipes..." />
-          <button onclick="">
-            <img src="./assets/searchBtn.svg" alt="search" />
-          </button>
-        </div>
-      </div>
-    </header>
-    <section class="toggleContainer">
-      <button id="toggleAll">
-        <span>All Recipies</span><img src="./assets/arrow_right.svg" alt="arrow" />
-      </button>
-      <button id="toggleVeg">
-        <span>Veg Recipes Only</span><img src="./assets/arrow_right.svg" alt="arrow" />
-      </button>
-      <button id="toggleNonVeg">
-        <span>Non Veg Recipies</span><img src="./assets/arrow_right.svg" alt="arrow" />
-      </button>
     </section>
-    <section id="siteBody">
-      <div id="filterSection">
-        <h2>Filters</h2>
-        <h4>Rating</h4>
-        <input type="checkbox" id="greterEqualToFour" /><label for="greterEqualToFour">
-          4 and above</label>
-        <br />
-        <input type="checkbox" id="lessThenFour" /><label for="lessThenFour">
-          Below 4</label>
-      </div>
-      <div id="recipieCardContainer">
-        
-        
-        <div class="recipeCard">
-          <img src="https://source.unsplash.com/random?veggies" alt="recipe_img" />
-          <div class="cardBody">
-            <div>
-              <span class="VegOrNonVeg">Veg</span>
-              <img src="./assets/Star.svg" alt="rating star" />
-              <span class="recipeRating">4.5</span>
-            </div>
-            <div class="recipeName">RussianSalad</div>
-            <div>
-              <span class="recipeTime">40 min</span>
-              <span class="recipeLikeBtn">🖤</span>
-              <span><img src="./assets/comments.svg" alt="comments" /></span>
+    <main>
+      <nav>
+        <div id="mobMenu" class="hide">
+          <img src="./assets/menu.svg" alt="site_logo" />
+        </div>
+        <div class="siteLogo">
+          <img src="./assets/CookpalIcon.svg" alt="site_logo" />
+        </div>
+        <ul class="navOptions" class="hideNav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <div class="userProfile hideNav">
+          <img src="./assets/userProfile.svg" alt="User Profile" />
+        </div>
+      </nav>
+      <header>
+        <div id="headerImageDiv">
+          <img
+            id="headerImg"
+            src="./assets/heroSectionImage.jpeg"
+            alt="header image background"
+          />
+          <div id="headerTxt">
+            <h3>Trending now</h3>
+            <h1>Mikes famous salad with cheese</h1>
+            <h2>By John Mike</h2>
+          </div>
+        </div>
+        <div id="searchAndRadioContainer">
+          <h2>Search For Recipes</h2>
+          <div class="searchDiv">
+            <label for="searchInput"
+              ><img src="./assets/searchLabel.svg" alt="search"
+            /></label>
+            <input
+              type="text"
+              name="search"
+              id="searchInput"
+              placeholder="Search for recipes..."
+            />
+            <button onclick="">
+              <img src="./assets/searchBtn.svg" alt="search" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="toggleContainer">
+        <button id="toggleAll">
+          <span>All Recipies</span
+          ><img src="./assets/arrow_right.svg" alt="arrow" />
+        </button>
+        <button id="toggleVeg">
+          <span>Veg Recipes Only</span
+          ><img src="./assets/arrow_right.svg" alt="arrow" />
+        </button>
+        <button id="toggleNonVeg">
+          <span>Non Veg Recipies</span
+          ><img src="./assets/arrow_right.svg" alt="arrow" />
+        </button>
+      </section>
+      <section id="siteBody">
+        <div id="filterSection">
+          <h2>Filters</h2>
+          <h4>Rating</h4>
+          <input type="checkbox" id="greterEqualToFour" /><label
+            for="greterEqualToFour"
+          >
+            4 and above</label
+          >
+          <br />
+          <input type="checkbox" id="lessThenFour" /><label for="lessThenFour">
+            Below 4</label
+          >
+        </div>
+        <div id="recipieCardContainer">
+          <div class="recipeCard">
+            <img
+              src="https://source.unsplash.com/random?veggies"
+              alt="recipe_img"
+            />
+            <div class="cardBody">
+              <div>
+                <span class="VegOrNonVeg">Veg</span>
+                <img src="./assets/Star.svg" alt="rating star" />
+                <span class="recipeRating">4.5</span>
+              </div>
+              <div class="recipeName">RussianSalad</div>
+              <div>
+                <span class="recipeTime">40 min</span>
+                <span class="recipeLikeBtn">🖤</span>
+                <span><img src="./assets/comments.svg" alt="comments" /></span>
+              </div>
             </div>
           </div>
         </div>
-
-
-
-
-
-      </div>
-    </section>
-    <footer>
-      <section id="aboutUsSection">
-        <p>
-          Cookpal is a recipe website with a wide variety of delicious
-          recipes, easy-to-use search function. Join our community and let's
-          cook together!
-        </p>
       </section>
-      <table id="usefulLinksSection">
-        <tr>
-          <th>Company</th>
-          <th>Resources</th>
-        </tr>
-        <tr>
-          <td><a href="#">Home</a></td>
-          <td><a href="#">Blog</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Explore</a></td>
-          <td><a href="#">Use Cases</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Team</a></td>
-          <td><a href="#">Testimonials</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">About Us</a></td>
-          <td><a href="#">Insights</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Activity</a></td>
-        </tr>
-      </table>
-      <section id="contactUsSection">
-        <h1><img src="./assets/CookpalIcon.svg" alt="site_logo" /></h1>
-        <p>To subscribe to our blog and get daily updates subscribe to us.</p>
-        <div>
-          <input id="emailForSub" type="text" placeholder=" Your Email @" /><button id="subscribe">
-            Subscribe
-          </button>
-        </div>
+      <footer>
+        <section id="aboutUsSection">
+          <p>
+            Cookpal is a recipe website with a wide variety of delicious
+            recipes, easy-to-use search function. Join our community and let's
+            cook together!
+          </p>
+        </section>
+        <table id="usefulLinksSection">
+          <tr>
+            <th>Company</th>
+            <th>Resources</th>
+          </tr>
+          <tr>
+            <td><a href="#">Home</a></td>
+            <td><a href="#">Blog</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Explore</a></td>
+            <td><a href="#">Use Cases</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Team</a></td>
+            <td><a href="#">Testimonials</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">About Us</a></td>
+            <td><a href="#">Insights</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Activity</a></td>
+          </tr>
+        </table>
+        <section id="contactUsSection">
+          <h1><img src="./assets/CookpalIcon.svg" alt="site_logo" /></h1>
+          <p>To subscribe to our blog and get daily updates subscribe to us.</p>
+          <div>
+            <input
+              id="emailForSub"
+              type="text"
+              placeholder=" Your Email @"
+            /><button id="subscribe">Subscribe</button>
+          </div>
+        </section>
+      </footer>
+      <section id="socials">
+        <div><img src="./assets/Instagram.svg" alt="social" /></div>
+        <div><img src="./assets/Twitter.svg" alt="social" /></div>
+        <div><img src="./assets/Linkedin.svg" alt="social" /></div>
+        <div><img src="./assets/Facebook.svg" alt="social" /></div>
       </section>
-    </footer>
-    <section id="socials">
-      <div><img src="./assets/Instagram.svg" alt="social" /></div>
-      <div><img src="./assets/Twitter.svg" alt="social" /></div>
-      <div><img src="./assets/Linkedin.svg" alt="social" /></div>
-      <div><img src="./assets/Facebook.svg" alt="social" /></div>
-    </section>
-  </main>
+    </main>
 
-  <script src="./scripts/script.js"></script>
-</body>
-
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
